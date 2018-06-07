@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+</head>
+<body background="desktop/internshiptaks/images/img1.JPEG">
+	<form method="post" enctype="multiform" action="insert.php" autocomplete="on">
+		
+	<h4 align="center" >FORM</h4>	
+	<table align="center">
+	<tr>
+		<td>Name:</td>          	
+		<td><input type="text" name="name" placeholder ="enter your name" maxlength="30"></td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td><input type="Password" name="pwd" placeholder ="enter your password"></td>
+	</tr>
+	
+	<tr>
+		<td>Email:</td>
+		<td><input type="mail" name="mail" placeholder ="enter your mail"  required></td>
+	</tr>
+	<tr>
+		<td>Phone Number:</td>
+		<td><input type="text" name="phno" placeholder="enter mobile number" pattern="[0-9]{10}" autocomplete="off"></td>
+	</tr>
+	
+	<tr>
+		<td>College:</td>
+		<td><input list="Colleges" placeholder ="enter college">
+					<datalist id="Colleges">
+  					<option value="MVGR"></option>
+  					<option value="AU"></option>
+  					<option value="GMR"></option>
+  					<option value="ANITS"></option>
+ 					<option value="GITAM"></option>
+  					<option value="GVP"></option>
+					</datalist></td>
+	</tr>
+	<tr>
+		<td>Branch:</td>
+		<td><input list="branches" placeholder="enter your college">
+				<datalist id="branches">
+				<option value="cse"></option>
+				<option value="it"></option>
+				<option value="mech"></option>
+			</datalist>
+		</td>
+	</tr>
+	<tr>
+		<td>LinkedIn id:</td>
+		<td><input type="url" name="college" placeholder ="enter your LinkedIn"></td>
+	</tr>
+	<tr>
+		<td>Date of birth:</td>
+		<td><input type="date" name="dob" min="1994-01-01" max="2000-12-31"></td>
+	</tr>
+	<tr>
+		<td>Gender:</td>
+		<td><input type="radio" name="gender">Male
+			<input type="radio" name="gender">Female</td>
+	</tr>
+	<tr>
+		<td>Known Languages:</td>
+		<td><input type="checkbox" name="lang">Telugu</br>
+			<input type="checkbox" name="lang">English</br>
+			<input type="checkbox" name="lang">Hindi</br>
+		</td>
+	<tr>
+	<tr>
+		<td>Skills:</td>
+		<td><input type="checkbox" name="skill">C</br>
+			<input type="checkbox" name="skill">java</br>
+			<input type="checkbox" name="skill">python</br>
+		</td>
+	</tr>
+	<tr>
+		<td>Upload Documents(aadhar,10th marks list,inter marks list):</td>
+		<td><input type="file" name="documents" multiple></td>
+	</tr>
+	<tr>
+		<td align="center">
+			<input type="submit" name="submit" value="submit">
+	    	<input type="reset" name="reset" value="reset">
+	    </td>
+	 </tr>
+</table>
+</form>
+</body>
+</html>
